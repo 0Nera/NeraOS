@@ -40,7 +40,7 @@ NeraOS/
 │       │   ├── RTL8139/
 │       │   ├── RTL8169/
 │       │   ├── E1000/
-│       │   └── AMD PCnet/
+│       │   └── PCnet/
 │       └── block/
 │           ├── IDE/
 │           └── ACHI/
