@@ -8,41 +8,43 @@ NeraOS - экспериментальное монолитное ядро.
 
 ## Структура директорий
 
-```
+```txt
 NeraOS/
 ├── kernel/
 │   ├── arch/
 │   │   ├── x86_64/
-│   │   └── ARMv8/
+│   │   └── aarch64/
 │   ├── include/
 │   ├── net/
-│   │   ├── protocols/
-│   │   │   ├── ARP/
-│   │   │   ├── UDP/
-│   │   │   ├── IP/
-│   │   │   └── TCP/
+│   │   ├── ARP/
+│   │   ├── UDP/
+│   │   ├── TCP/
+│   │   ├── IP/
 │   │   └── HTTP/
 │   ├── sys/
 │   ├── mem/
 │   ├── fs/
+│   │   ├── base/
 │   │   ├── ext2/
 │   │   ├── ext3/
 │   │   ├── ext4/
 │   │   ├── exFAT/
 │   │   └── FAT32/
-│   ├── drivers/
-│   │   ├── basic/
-│   │   │   ├── USB/
-│   │   │   ├── rawfb/
-│   │   │   └── UART/
-│   │   ├── network/
-│   │   │   ├── RTL8139/
-│   │   │   ├── RTL8169/
-│   │   │   ├── E1000/
-│   │   │   └── AMD PCnet/
-│   │   └── block/
-│   │       ├── IDE/
-│   │       └── ACHI/
+│   └── drivers/
+│       ├── basic/
+│       │   ├── COM/
+│       │   ├── USB/
+│       │   ├── rawfb/
+│       │   └── UART/
+│       ├── network/
+│       │   ├── RTL8139/
+│       │   ├── RTL8169/
+│       │   ├── E1000/
+│       │   └── AMD PCnet/
+│       └── block/
+│           ├── IDE/
+│           └── ACHI/
+├── Makefile
 ├── LICENSE
 └── README.md
 ```
